@@ -13,14 +13,12 @@ Author: yusufadell
 */
 
 import java.util.Scanner;
-class CheckChoice
-{
-    public static void main(String[] args)
-    {
+
+class CheckChoice {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter  First Number- ");
         float num1 = sc.nextFloat();
-
 
         System.out.print("Enter  Second Number- ");
         float num2 = sc.nextFloat();
@@ -28,8 +26,7 @@ class CheckChoice
         System.out.print("Enter A Chice(1-3) 1- (+), 2- (*), 3- (%)");
         int choice = sc.nextInt();
 
-        switch (choice)
-        {
+        switch (choice) {
         case 1:
             System.out.printf("%.2f + %.2f = %.2f", num1, num2, num1 + num2);
             break;
@@ -42,19 +39,17 @@ class CheckChoice
 
         }
 
-
         /*
-               Hard Coded Solution (not recommended!)
-
-                   if (choice == 1){
-                       System.out.println(num1 + " + " + num2 + " = " + addition);
-
-                   }else if (choice == 2){
-
-                       System.out.println(num1 + " * " + num2 + " = " + num1 * num2);
-
-                   }else if (choice == 3){
-                       System.out.println(num1 + " % " + num2 + " = " + num1 % num2);
-                   }*/
+         * Hard Coded Solution (not recommended!)
+         * 
+         * if (choice == 1){ System.out.println(num1 + " + " + num2 + " = " + addition);
+         * 
+         * }else if (choice == 2){
+         * 
+         * System.out.println(num1 + " * " + num2 + " = " + num1 * num2);
+         * 
+         * }else if (choice == 3){ System.out.println(num1 + " % " + num2 + " = " + num1
+         * % num2); }
+         */
     }
 }

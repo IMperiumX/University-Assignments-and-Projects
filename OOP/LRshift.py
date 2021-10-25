@@ -1,4 +1,4 @@
-'''
+"""
 Object Oriented Programming (OOP) >> (CS213).
 
 Description: Python Program to show shift operator
@@ -7,7 +7,7 @@ Description: Python Program to show shift operator
 Author: yusufadell
 
 
-'''
+"""
 
 a = 10
 b = -10

@@ -1,4 +1,4 @@
-'''
+"""
 Object Oriented Programming (OOP) >> (CS213).
 
 Description: Program asks the user for 2 numbers and do four different
@@ -8,7 +8,7 @@ Arithmetic operations, and display the result/
 Author: yusufadell
 
 
-'''
+"""
 
 
 # alternatively use map(int, input("Enter First number").split(""))

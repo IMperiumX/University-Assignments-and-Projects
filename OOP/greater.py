@@ -1,4 +1,4 @@
-'''
+"""
 Object Oriented Programming (OOP) >> (CS213).
 
 Description: Ask usre for 2 numbers "num1", "num2" and compare them, if num2
@@ -9,7 +9,7 @@ one
 Author: yusufadell
 
 
-'''
+"""
 
 # Get the user input and split in spaces >> split(" ")
 userinput = input("Enter Two number seperated by spaces: ").split(" ")

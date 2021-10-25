@@ -27,49 +27,41 @@ Author: yusufadell
 
 import java.util.Scanner;
 
-public class GetAverage
-{
+public class GetAverage {
 
-    public GetAverage()
-    {
+    public GetAverage() {
         String getStr = getUserNums();
         double result = userAvg(getStr);
         printAverage(getStr, result);
 
     }
 
-    public String getUserNums()
-    {
+    public String getUserNums() {
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter six numbers separated by spaces: ");
         return in.nextLine();
     }
 
-    public static double userAvg(String str)
-    {
+    public static double userAvg(String str) {
         String[] arr = str.split(" ");
         double sum = 0.0;
         double average = 0.0;
-        for (int i = 0; i < arr.length; i++)
-        {
+        for (int i = 0; i < arr.length; i++) {
             sum += Integer.parseInt(arr[i]);
         }
-        if (arr.length > 0)
-        {
+        if (arr.length > 0) {
             average = sum / arr.length;
         }
 
         return average;
     }
 
-    public static void printAverage(String userNumInput, double average)
-    {
+    public static void printAverage(String userNumInput, double average) {
         System.out.printf("The average of the numbers " + userNumInput + " is %.2f", average);
 
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         new GetAverage();
 
     }
