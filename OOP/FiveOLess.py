@@ -17,8 +17,7 @@ userinput = input("Enter numbers seperated by space: ")
 
 
 # Ambiguous Way Using list comprehension and not recommended!.
-tmp = userinput.split(" ")
-List = [int(i) for i in tmp]
+List = [int(i) for i in userinput.split(" ")]
 ans = [i for i in List if i < 5]
 
 print(ans)
