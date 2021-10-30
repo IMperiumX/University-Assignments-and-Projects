@@ -20,6 +20,6 @@ class CalcRec {
         float area = width * height / 2;
 
         System.out.println("Rectangle Area: " + area);
-
+        sc.close();
     }
 }

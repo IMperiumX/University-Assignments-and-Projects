@@ -39,7 +39,9 @@ public class GetAverage {
     public String getUserNums() {
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter six numbers separated by spaces: ");
+        in.close();
         return in.nextLine();
+
     }
 
     public static double userAvg(String str) {

@@ -25,7 +25,7 @@ class CheckChoice {
 
         System.out.print("Enter A Chice(1-3) 1- (+), 2- (*), 3- (%)");
         int choice = sc.nextInt();
-
+        sc.close();
         switch (choice) {
         case 1:
             System.out.printf("%.2f + %.2f = %.2f", num1, num2, num1 + num2);

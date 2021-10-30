@@ -7,10 +7,9 @@ Author: yusufadell
 */
 
 import java.util.Scanner;
-class Convert
-{
-    public static void main(String[] args)
-    {
+
+class Convert {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Please enter the height in feet: ");
         double feet = scan.nextInt();
@@ -20,16 +19,16 @@ class Convert
         Conversion_inch_to_cm(inch);
         scan.close();
     }
-    static double Conversion_feet_to_cm(double feet)
-    {
 
-        double centimeter  = 30.48 * feet;
+    static double Conversion_feet_to_cm(double feet) {
+
+        double centimeter = 30.48 * feet;
         System.out.printf("Value in Centimeter is: %.2f \n", centimeter);
         return 0;
     }
-    static double Conversion_inch_to_cm(double inch)
-    {
-        double centimeter  = 2.54 * inch;
+
+    static double Conversion_inch_to_cm(double inch) {
+        double centimeter = 2.54 * inch;
         System.out.printf("Value in Centimeter is: %.2f \n", centimeter);
         return 0;
     }

@@ -17,6 +17,7 @@ class PowFunc {
 
         System.out.print("Enter The Power- ");
         double power = sc.nextDouble();
+        sc.close();
 
         System.out.printf("%.2f to the power of %.2f = %.2f: ", base, power, Math.pow(base, power));
 

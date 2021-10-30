@@ -20,6 +20,7 @@ class OddEvenSum {
         // create a scanner object for input
         System.out.print("Enter the number for num: \n");
         num = scan.nextInt(); // reads num1 from user
+        scan.close();
         for (i = 1; i <= num; i++) {
             if (i % 2 == 0)
                 evenSum = evenSum + i;

@@ -6,13 +6,10 @@ Description: Write a java program that accepts 3 numbers from user and pringt th
 Author: yusufadell
 */
 
-
 import java.util.Scanner;
 
-public class Biggest_Number
-{
-    public static void main(String[] args)
-    {
+public class Biggest_Number {
+    public static void main(String[] args) {
         int x, y, z;
         Scanner s = new Scanner(System.in);
         System.out.print("Enter the first number:");
@@ -21,16 +18,12 @@ public class Biggest_Number
         y = s.nextInt();
         System.out.print("Enter the third number:");
         z = s.nextInt();
-        if(x > y && x > z)
-        {
+        s.close();
+        if (x > y && x > z) {
             System.out.println("Largest number is: " + x);
-        }
-        else if(y > z)
-        {
+        } else if (y > z) {
             System.out.println("Largest number is: " + y);
-        }
-        else
-        {
+        } else {
             System.out.println("Largest number is: " + z);
         }
 

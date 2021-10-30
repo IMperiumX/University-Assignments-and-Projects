@@ -16,6 +16,7 @@ class PostTest {
 
         System.out.println("Enter A Number- ");
         int num = sc.nextInt();
+        sc.close();
 
         if (num > 0 && num % 2 == 0) {
             System.out.println(num + " is even");

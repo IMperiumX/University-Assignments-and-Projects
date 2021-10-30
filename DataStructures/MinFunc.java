@@ -16,6 +16,7 @@ class MinFunc {
 
         System.out.print("Enter Second Power- ");
         double num2 = sc.nextDouble();
+        sc.close();
 
         if (num1 < num2) {
             System.out.print("Smallest number: " + num1);
