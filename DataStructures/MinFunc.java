@@ -14,7 +14,7 @@ class MinFunc {
         System.out.print("Enter First Number- ");
         double num1 = sc.nextDouble();
 
-        System.out.print("Enter Second Power- ");
+        System.out.print("Enter Second Number- ");
         double num2 = sc.nextDouble();
         sc.close();
 
