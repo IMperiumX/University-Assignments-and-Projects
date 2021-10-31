@@ -14,7 +14,6 @@
 <br>
 
 <details>
-https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/
 <summary>
 3- Using the <a href="https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/" target="_blank">big-O notation</a> write the asymptotic upper bounds for the following expressions:
 
@@ -53,7 +52,6 @@ Sorted:-
 ```
 
 </details>
-
 
 
 <details>
