@@ -1,7 +1,0 @@
-{
-    "python.formatting.provider": "black",
-    "java.project.sourcePaths": [
-        "DataStructures",
-        "OS"
-    ]
-}
