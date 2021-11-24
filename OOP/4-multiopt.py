@@ -2,7 +2,6 @@ import reprlib
 
 userinput = input("Enter numbers seperated by spaces: ")
 List = list(userinput.split(" "))
-NewList = [int(i) for i in List]
 
 
 def main():
@@ -34,6 +33,7 @@ def sumIndexes():
 
 
 def orderList():
+    NewList = [int(i) for i in List]
     NewList.sort()  # Sort the list inplace without creating a new object.
     print(f"Ordered Version: {NewList}")
     reverseOrder()
@@ -41,9 +41,8 @@ def orderList():
 
 def reverseOrder():
     print(
-        f"List in Descending order: {NewList[::-1]}"
+        f"List in Descending order: {List[::-1]}"
     )  # Same list with [:] and :-1 refers to backwords steps.
-
 
 if __name__ == "__main__":
     main()
@@ -59,13 +58,13 @@ if __name__ == "__main__":
 #     List.sort()
 #     template = f"""
 
-#   Lenght: {n}
+# 	Lenght: {n}
 
-#   Sum of indexes: {sum(range(n))}
+# 	Sum of indexes: {sum(range(n))}
 
-#   Ordered list: {reprlib.repr(List)}
+# 	Ordered list: {reprlib.repr(List)}
 
-#   Descending Oerder: {reprlib.repr(List[::-1])}
+# 	Descending Oerder: {reprlib.repr(List[::-1])}
 
-#   """
+# 	"""
 #     return template
