@@ -1,4 +1,4 @@
-## Unordered Array Quiz
+## Unordered Array Quiz [Part2 Ordered Array](./part2-Ch2-Quiz.md)            
 
 <details>
 <summary>
@@ -31,7 +31,8 @@ class SumOfElementsOfAnArray {
 
 
 </details>
-<br>
+
+## 
 
 <details>
 <summary>
@@ -65,7 +66,8 @@ public class OddEvenSumArray {
 ```
 
 </details>
-<br>
+
+##
 
 <details>
     <summary>
@@ -92,7 +94,7 @@ public class SmallestInArrayExample {
 
 </details>
 
-<br>
+##
 
 <details>
 <summary>
@@ -101,14 +103,15 @@ array of size 100, how long it takes to run it on the array of
 size 400.
 </summary>
 
-<b>Ans -->  ((400 ** 3) * 10) / 100 ** 3 = 640 seconds.
+<b>Answer -->  ((400 ** 3) * 10) / 100 ** 3 = 640 seconds. </p>
 
-<br>
-Explaination:
-</b>
+
+<p><b>Explaination:</b></p>
+
+
 Time complixity: <b>O(n^3)</b>
 
-<br>
+
 (size = 100 : operations = 100 ^ 3, time = 10) & (size = 400 : operations = 400 ^ 3, time = <b>X</b>)
 
 ```java
@@ -164,46 +167,3 @@ public class smallestOddNumber {
 </details>
 
 
-## Ordered Array Quiz
-
-1- What is the difference of big O for inserting, deleting, and
-getting an item in Unordered array and ordered array?
-
-
-2- Write a program that implement and tests the binary search
-method. The program first creates an array of ten odd
-numbers from 1 to 20. It displays this array and then
-prompts the user to enter a key 11 for testing binary search.
-
-
-3- Suppose that the array shown below has 7 sorted elements.
-Which values are tested during a binary search to determine
-that the value 8 is not present, and in what order are they
-tested?
-‫
-+----+----+----+----+----+----+----+
-| 3 | 5 | 6 |
-7 | 9 | 12 | 17 |
-+----+----+----+----+----+----+----+
-
-
-4- Can we apply binary search algorithm when searching for
-value 5 within the following array 44, 13, 1, 100, 234,
-121, 55, 16? Explain why?
-
-
-5- Given an n-element array, an algorithm chooses half of the
-elements from the array at random and executes an O(n)
-time calculation for each element. What is the running time
-of this algorithm?
-
-
-6- Write Big O of the following code?
-
-i = n;
-while(i > 0)
-{
-if(binarySearch(list, i))
-System.out.println("Found");
-i--;
-}
