@@ -2,6 +2,7 @@
 1- Write the bubbleSort() **method** code in descending
 order? How many comparisons does a bubble sort
 perform in sorting N items?
+
 ```java
 public void bubbleSort()
 {
@@ -14,7 +15,8 @@ int out, in;
 
 Comparisons: N^2/2
 ```
-## 
+
+##
 
 2- Write bubble sort algorithm that contains both
 **bubbleSort1** and **bubbleSort2** methods. Where after the
@@ -26,7 +28,6 @@ bubbleSort2, the smallest element is guaranteed to be at
 index 0, after t he second pass, the second smallest is at
 index 1, and so on.
 
-
 - **bubbleSort1** >> assending order sorting.....
 - **bubbleSort2** >> descending order sorting.....
 
@@ -36,7 +37,6 @@ index 1, and so on.
 on a certain computer. About how long will it take on
 50,000 elements?
 
-
 `Time complixty: O(N^2) ignoring (-1) for large size input!`
 
 |    operations   | time|
@@ -44,9 +44,9 @@ on a certain computer. About how long will it take on
 |(10 ^ 3) ^ 2     |1 sec|
 |(50 * 10 ^ 3) ^ 2|x sec|
 
-Ans: ((((50 * 10 ** 3)) ** 2 * 1) / (10 ** 3) ** 2) --> 50 ** 2 = **2500.0 sec**.
+Ans: ((((50 *10 ** 3)) ** 2* 1) / (10 **3)** 2) --> 50 **2 =**2500.0 sec**.
 
-## 
+##
 
 4- We need sort the following array [2 1 5 4 3 6] of integers
 into ascending order:
@@ -88,7 +88,6 @@ changes it. How many comparison operations and how
 many swaps are performed in the sorting?
 
 ##
-
 
 d- Use merge sort to sort the provided array. Be sure to
 show your work. For example, show the substeps of merge sort using recursion trees.

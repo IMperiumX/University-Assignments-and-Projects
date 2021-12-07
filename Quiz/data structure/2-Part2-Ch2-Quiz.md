@@ -1,10 +1,7 @@
 ## Ordered Array Quiz
 
-
-
 1- What is the difference of big O for inserting, deleting, and
 getting an item in Unordered array and ordered array?
-
 
 |Algorithm |Running Time in Big(O) Notation|
 |----------|:-----------------------------:|
@@ -12,7 +9,6 @@ getting an item in Unordered array and ordered array?
 |Insertion in **ordered**   array|   O(N)  |
 |Deletion  in **unordered** array|   O(N)  |
 |Deletion  in **ordered**   array|   O(N)  |
-
 
 ##
 
@@ -87,7 +83,6 @@ Then you end up with an Array of one element(9)
 
 </details>
 
-
 ##
 
 <details>
@@ -104,9 +99,7 @@ Answer:
 
 <p>We can't apply binary search algorithm when searching for a value in <b>unordered</b> array.</p>
 
-
 </details>
-
 
 ##
 
@@ -122,11 +115,10 @@ of this algorithm?
 Running time: Logarithmic Time O(log(N))
 ```
 
-
 </details>
 
-
 ##
+
 <details>
 <summary>
 6- Write Big O of the following code?
@@ -140,8 +132,8 @@ System.out.println("Found");
 i--;
 }
 ```
-</summary>
 
+</summary>
 
 ```
 Ans: O(N)

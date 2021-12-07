@@ -1,4 +1,4 @@
-## Unordered Array Quiz [Part2 Ordered Array](./part2-Ch2-Quiz.md)            
+## Unordered Array Quiz [Part2 Ordered Array](./part2-Ch2-Quiz.md)
 
 <details>
 <summary>
@@ -29,10 +29,9 @@ class SumOfElementsOfAnArray {
 
 ```
 
-
 </details>
 
-## 
+##
 
 <details>
 <summary>
@@ -103,14 +102,11 @@ array of size 100, how long it takes to run it on the array of
 size 400.
 </summary>
 
-<b>Answer -->  ((400 ** 3) * 10) / 100 ** 3 = 640 seconds. </p>
-
+<b>Answer --> ((400 **3) \* 10) / 100** 3 = 640 seconds. </p>
 
 <p><b>Explaination:</b></p>
 
-
 Time complixity: <b>O(n^3)</b>
-
 
 (size = 100 : operations = 100 ^ 3, time = 10) & (size = 400 : operations = 400 ^ 3, time = <b>X</b>)
 
@@ -164,6 +160,5 @@ public class smallestOddNumber {
 }
 
 ```
+
 </details>
-
-
