@@ -60,7 +60,8 @@ c- n log(n)
 
 <details>
 <summary>
-4- Sort Ascending: 
+4- Sort Ascending:
+
 ```
 [200 log(log(n)), log(n), n!, n^3]
 ``` 
@@ -120,7 +121,11 @@ Complexity: O(n^3) Three nested for loops
 
 <details>
 <summary>7- Order the following functions by ascending growth.
+
+```
 a- c3n^8,  n^3,  n^2 + c2n,  n!,  n log(n),  2^n,  log(n)
+```
+
 </summary>
 
 Ascending Growth: 
