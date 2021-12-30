@@ -1,0 +1,25 @@
+{% extends "layout.html" %} {% block title %} Edit {{title}}
+{%endblock %} {% block body %}
+<h1>Edit Page: {{title}}</h1>
+<div class="container">
+    {% if error %}
+    <h2 align="center">{{error}}</h2>
+    {%else%}
+    {%if message%}
+    <div class="alert alert-danger" role="alert">
+        {{message}}
+    </div>
+    {%endif%}
+    <form method="POST">
+        {% csrf_token%}
+        <div>
+            <div>
+                <label for="content">Content</label>
+                <textarea class="form-control" id="content" cols="30" name="content" rows="10" placeholder="Write page content in markdown">{%if content%}{{content}}{%endif%}</textarea>
+            </div>
+            <input type="submit" value="Save" class="btn btn-success my-3" />
+        </div>
+    </form>
+    {%endif%}
+</div>
+{% endblock %}
