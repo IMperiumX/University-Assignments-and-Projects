@@ -1,0 +1,10 @@
+{% extends "layout.html" %} {% block title %} Encyclopedia {%endblock %} {% block body %}
+<h1>All Pages</h1>
+<ul class="list-group">
+    {% for title in titles %}
+    <a href="{% url 'entry' title %}">
+        <li class="list-group-item" style="margin: 5px;">{{ title }}</li>
+    </a>
+    {% endfor %}
+</ul>
+{% endblock %}

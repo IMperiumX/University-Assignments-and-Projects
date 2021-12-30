@@ -1,4 +1,4 @@
-# Stack Quiz.
+# Stack Quiz
 
 ## 1- What is the basic difference between a stack and a queue?
 
@@ -16,7 +16,7 @@ If you remove this item, then you can access the next-to-last item inserted, and
 
 ##
 
-### 3- Assume that numbers 10, 22, 33, 48, 11 are pushed on a stack, two numbers are popped, then numbers 18, 444 are pushed on the stack, and three numbers are popped. What remains on the stack? 
+### 3- Assume that numbers 10, 22, 33, 48, 11 are pushed on a stack, two numbers are popped, then numbers 18, 444 are pushed on the stack, and three numbers are popped. What remains on the stack?
 
 ```
 two numbers are popped >> 10, 22, 33
@@ -25,6 +25,7 @@ numbers 18, 444 are pushed >> 10, 22, 33, 18, 444
 
 three numbers are popped >> **10, 22**
 ```
+
 ##
 
 ## 4- Write the complexity or big O of stack?
@@ -37,15 +38,13 @@ three numbers are popped >> **10, 22**
 |   push   | O(1) |
 |   peek   | O(1) |
 
-
 `B.S: O(1) has nothing to do with time!!`
 
-#### It means the number of operations is not changing with the incearsing of stack size....
+#### It means the number of operations is not changing with the incearsing of stack size
 
 ##
 
-
-## 5- For the class Stack, write method displayStackStartingAtBottom() that displays the content of the stack starting from the element on the bottom.
+## 5- For the class Stack, write method displayStackStartingAtBottom() that displays the content of the stack starting from the element on the bottom
 
 ```
 
@@ -58,7 +57,6 @@ three numbers are popped >> **10, 22**
 O(1)
 
 ```
-
 
 # Queue Quiz
 

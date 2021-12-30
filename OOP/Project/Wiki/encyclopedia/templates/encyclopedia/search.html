@@ -1,0 +1,13 @@
+{% extends "layout.html" %} {% block title %} Search {%endblock %} {% block body %}
+<h1>Related Pages</h1>
+<p>search result for {{q}}</p>
+<ul>
+    {% for title in titles %}
+    <a href="{% url 'entry' title %}">
+        <li>{{ title }}</li>
+    </a>
+    {% empty%}
+    <h1>Result not found!</h1>
+    {% endfor %}
+</ul>
+{% endblock %}

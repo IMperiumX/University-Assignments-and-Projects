@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block title %} {{title}}{%endblock %}
+{% block body %}
+    <a href="{% url 'edit' title %}" style="position: absolute; top: 20px; right: 60px;" class="btn btn-outline-primary">Edit This Entry</a>
+{{content | safe}} 
+{% endblock %}

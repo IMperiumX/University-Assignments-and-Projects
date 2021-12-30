@@ -12,7 +12,7 @@ for i in range(10):
 
 # 2- What is the output?
 
-d = {0: 'a', 1: 'b', 2: 'c'}
+d = {0: "a", 1: "b", 2: "c"}
 for i in d:
     print(i)
 

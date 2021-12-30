@@ -1,6 +1,5 @@
 ## Chapter 1 Quiz
 
-
 <details>
 <summary>1- Define data structure and algorithm.</summary>
 <br>
@@ -9,7 +8,7 @@
 
 <p></p>
 
-<a href="https://www.geeksforgeeks.org/introduction-to-algorithms/" target="_blank">Algorithm</a>: An algorithm is a procedure for carrying out a particular task 
+<a href="https://www.geeksforgeeks.org/introduction-to-algorithms/" target="_blank">Algorithm</a>: An algorithm is a procedure for carrying out a particular task
 <p></p>
 </details>
 
@@ -26,10 +25,12 @@
 
 - A program is more linked to the execution of one or more tasks by a computer.
 ```
+
 <p></p>
 </details>
 
 ##
+
 <details>
 <summary>
 3- Using the <a href="https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/" target="_blank">big-O notation</a> write the asymptotic upper bounds for the following expressions:
@@ -41,8 +42,8 @@ b- 40n^5 + 3n
 
 c- n log(n) + 200 log(n)
 ```
-</summary>
 
+</summary>
 
 Answer:
 
@@ -53,27 +54,33 @@ b- n ^ 5
 
 c- n log(n)
 ```
-</details>
 
+</details>
 
 ##
 
 <details>
 <summary>
 4- Sort Ascending:
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 638adae (Section 9 (Functions) tasks)
+>>>>>>> fe6bda2
 ```
 [200 log(log(n)), log(n), n!, n^3]
-``` 
+```
 </summary>
-
-
 
 Sorted:
 
 ```
 200 log(log(n)) < log(n) < n^3 < n!
 ```
+
 <p></p>
 </details>
 
@@ -88,8 +95,8 @@ for(int i=0; i<n; i++)
 for(int i=0; i<n*n; i++)
 sum++;
 ```
-</summary>
 
+</summary>
 
 Complexity: O(n^2) Two nested for loops
 <p></p>
@@ -97,6 +104,7 @@ Complexity: O(n^2) Two nested for loops
 </details>
 
 ##
+
 <details>
 <summary>6- Explain time complexity of:
 
@@ -107,15 +115,12 @@ for(int j=0; j<n; j++)
 for(int k=0; k<n; k++)
 x = x + 1;
 ```
-</summary>
 
+</summary>
 
 Complexity: O(n^3) Three nested for loops
 <p></p>
 </details>
-
-
-
 
 ##
 
@@ -128,7 +133,7 @@ a- c3n^8,  n^3,  n^2 + c2n,  n!,  n log(n),  2^n,  log(n)
 
 </summary>
 
-Ascending Growth: 
+Ascending Growth:
 
 `log(n) < n log(n) < n < c2n < n^2 < n^3 < c3n^8.`
 <p></p>
