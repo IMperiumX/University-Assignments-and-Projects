@@ -4,6 +4,8 @@ In mathematics and computer science, an algorithm is defined as a process or set
 
 ## Day 1 Binary Search
 
+##
+
 [704. Binary Search](https://leetcode.com/problems/binary-search/)
 
 **Example:**
@@ -22,7 +24,7 @@ def search(nums, target):
     return index if index < len(nums) and nums[index] == target else -1
 ```
 
-<br>
+##
 
 ```python
 def search(nums, target):
@@ -38,6 +40,7 @@ def search(nums, target):
     return -1
 ```
 
+##
 
 [278. First Bad Version](https://leetcode.com/problems/first-bad-version/submissions/)
 
@@ -73,6 +76,7 @@ def firstBadVersion(n) -> int:
             left = mid + 1
     return left
 ```
+##
 
 ```python
 def binary_search(array) -> int:
@@ -88,6 +92,8 @@ def binary_search(array) -> int:
             left = mid + 1
     return left
 ```
+
+##
 
 [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
@@ -123,6 +129,8 @@ def searchInsert(nums: List[int], target: int) -> int:
             high = mid
     return low
 ```
+
+##
 
 
 **Using bisect module**
