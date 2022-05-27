@@ -1,6 +1,6 @@
 import reprlib
 
-userinput = input("Enter numbers seperated by spaces: ")
+userinput = input("Enter numbers separated by spaces: ")
 List = list(userinput.split(" "))
 
 
@@ -42,7 +42,7 @@ def orderList():
 def reverseOrder():
     print(
         f"List in Descending order: {List[::-1]}"
-    )  # Same list with [:] and :-1 refers to backwords steps.
+    )  # Same list with [:] and :-1 refers to backwards steps.
 
 if __name__ == "__main__":
     main()
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 #     List.sort()
 #     template = f"""
 
-# 	Lenght: {n}
+# 	Length: {n}
 
 # 	Sum of indexes: {sum(range(n))}
 

@@ -10,12 +10,12 @@ Code Overview:
 
 0)GetAverage() >> initialize the program by running the following 3 functions.
 
-1)getUserNums() >> capture the user input as a one line of numbers seperated by spaces.
+1)getUserNums() >> capture the user input as a one line of numbers separated by spaces.
                     e.g1 2 3 4 5"
 
 2)userAvg() >>  get list of strings(numbers) by splitting on space " "
         e.g "1 2 3 4 5" becomes ["1","2","3","4","5"]
-        Then get the sum of the numbers in the list and devide over their count.
+        Then get the sum of the numbers in the list and divide over their count.
 
 3)printAverage >> print formatted string with the average of the numbers
 

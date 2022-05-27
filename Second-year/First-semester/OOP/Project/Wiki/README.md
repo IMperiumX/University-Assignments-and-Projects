@@ -49,7 +49,7 @@ A search bar is available at all times on the site that users can utilise to sea
 
 Users can create a brand new page by clicking on the 'Create New Page' link. This takes the user to a page with a form to input the name for the title article, as well as the article contents. A button on the page submits the form. If the form is filled in correctly, and no article currently exists with the title given, the new article page is created and the user is redirected to the new article page. Otherwise, if an article with the same title already exists, users are returned to the 'Create New Page' form with their input text, and advised that rather than create a new page, they should instead go to the title page and edit it.
 
-When viewing any article on the site, an 'Edit Page' button is available. Clicking this takes users to a page with a form, allowing them to edit the contents of the article. When the form is updated and submited, the user is returned back to the updated article page.
+When viewing any article on the site, an 'Edit Page' button is available. Clicking this takes users to a page with a form, allowing them to edit the contents of the article. When the form is updated and submitted, the user is returned back to the updated article page.
 
 Finally a 'Random Page' link is available in the side bar which when clicked will randomly select an article from all those available on the site and redirect the user to the selected article page.
 

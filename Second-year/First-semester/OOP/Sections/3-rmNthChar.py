@@ -1,7 +1,7 @@
 """
 Object Oriented Programming (OOP) >> (CS213).
 
-Description: Write a Python program to remove the Nth Index chracter from a
+Description: Write a Python program to remove the Nth Index character from a
 nonempty string.
 
 

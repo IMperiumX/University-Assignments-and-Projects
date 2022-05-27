@@ -136,7 +136,7 @@ i--;
 </summary>
 
 ```
-Ans: O(N)
+And: O(N)
 worst case here that could be no such element to Found....!
 ```
 

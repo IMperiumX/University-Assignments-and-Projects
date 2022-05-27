@@ -104,7 +104,7 @@ size 400.
 
 <b>Answer --> ((400 **3) \* 10) / 100** 3 = 640 seconds. </p>
 
-<p><b>Explaination:</b></p>
+<p><b>Explanation:</b></p>
 
 Time complixity: <b>O(n^3)</b>
 

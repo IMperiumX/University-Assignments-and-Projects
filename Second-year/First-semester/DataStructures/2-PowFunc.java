@@ -1,7 +1,7 @@
 /*
 Data Structures >> (CS214).
 
-Description: Java Programm that calculate a numer $num to the power $pow 
+Description: Java Programm that calculate a number $num to the power $pow 
 pow(num, pow).
 
 

@@ -23,7 +23,7 @@ is divided into following sections:
     <fail message="Please build using Ant 1.8.0 or higher.">
         <condition>
             <not>
-                <antversion atleast="1.8.0"/>
+                <antversion at least="1.8.0"/>
             </not>
         </condition>
     </fail>
@@ -208,20 +208,20 @@ is divided into following sections:
                 <available classname="junit.framework.Test" classpath="${run.test.classpath}"/>
             </or>
         </condition>
-        <condition property="testng.available">
-            <available classname="org.testng.annotations.Test" classpath="${run.test.classpath}"/>
+        <condition property="testing.available">
+            <available classname="org.testing.annotations.Test" classpath="${run.test.classpath}"/>
         </condition>
-        <condition property="junit+testng.available">
+        <condition property="junit+testing.available">
             <and>
                 <istrue value="${junit.available}"/>
-                <istrue value="${testng.available}"/>
+                <istrue value="${testing.available}"/>
             </and>
         </condition>
-        <condition else="testng" property="testng.mode" value="mixed">
-            <istrue value="${junit+testng.available}"/>
+        <condition else="testing" property="testing.mode" value="mixed">
+            <istrue value="${junit+testing.available}"/>
         </condition>
-        <condition else="" property="testng.debug.mode" value="-mixed">
-            <istrue value="${junit+testng.available}"/>
+        <condition else="" property="testing.debug.mode" value="-mixed">
+            <istrue value="${junit+testing.available}"/>
         </condition>
         <property name="java.failonerror" value="true"/>
     </target>
@@ -433,15 +433,15 @@ is divided into following sections:
         </macrodef>
     </target>
     <target depends="-init-macrodef-junit-init,-init-macrodef-junit-single, -init-macrodef-junit-batch" if="${junit.available}" name="-init-macrodef-junit"/>
-    <target if="${testng.available}" name="-init-macrodef-testng">
-        <macrodef name="testng" uri="http://www.netbeans.org/ns/j2se-project/3">
+    <target if="${testing.available}" name="-init-macrodef-testing">
+        <macrodef name="testing" uri="http://www.netbeans.org/ns/j2se-project/3">
             <attribute default="${includes}" name="includes"/>
             <attribute default="${excludes}" name="excludes"/>
             <attribute default="**" name="testincludes"/>
             <attribute default="" name="testmethods"/>
             <element name="customize" optional="true"/>
             <sequential>
-                <condition else="" property="testng.methods.arg" value="@{testincludes}.@{testmethods}">
+                <condition else="" property="testing.methods.arg" value="@{testincludes}.@{testmethods}">
                     <isset property="test.method"/>
                 </condition>
                 <union id="test.set">
@@ -449,15 +449,15 @@ is divided into following sections:
                         <filename name="@{testincludes}"/>
                     </fileset>
                 </union>
-                <taskdef classname="org.testng.TestNGAntTask" classpath="${run.test.classpath}" name="testng"/>
-                <testng classfilesetref="test.set" failureProperty="tests.failed" listeners="org.testng.reporters.VerboseReporter" methods="${testng.methods.arg}" mode="${testng.mode}" outputdir="${build.test.results.dir}" suitename="Round_Robin_1" testname="TestNG tests" workingDir="${work.dir}">
+                <taskdef classname="org.testing.TestNGAntTask" classpath="${run.test.classpath}" name="testing"/>
+                <testing classfilesetref="test.set" failureProperty="tests.failed" listeners="org.testing.reporters.VerboseReporter" methods="${testing.methods.arg}" mode="${testing.mode}" outputdir="${build.test.results.dir}" suitename="Round_Robin_1" testname="testing tests" workingDir="${work.dir}">
                     <xmlfileset dir="${build.test.classes.dir}" includes="@{testincludes}"/>
                     <propertyset>
                         <propertyref prefix="test-sys-prop."/>
                         <mapper from="test-sys-prop.*" to="*" type="glob"/>
                     </propertyset>
                     <customize/>
-                </testng>
+                </testing>
             </sequential>
         </macrodef>
     </target>
@@ -487,7 +487,7 @@ is divided into following sections:
             </sequential>
         </macrodef>
     </target>
-    <target depends="-init-macrodef-testng" if="${testng.available}" name="-init-macrodef-testng-impl">
+    <target depends="-init-macrodef-testing" if="${testing.available}" name="-init-macrodef-testing-impl">
         <macrodef name="test-impl" uri="http://www.netbeans.org/ns/j2se-project/3">
             <attribute default="${includes}" name="includes"/>
             <attribute default="${excludes}" name="excludes"/>
@@ -495,9 +495,9 @@ is divided into following sections:
             <attribute default="" name="testmethods"/>
             <element implicit="true" name="customize" optional="true"/>
             <sequential>
-                <j2seproject3:testng excludes="@{excludes}" includes="@{includes}" testincludes="@{testincludes}" testmethods="@{testmethods}">
+                <j2seproject3:testing excludes="@{excludes}" includes="@{includes}" testincludes="@{testincludes}" testmethods="@{testmethods}">
                     <customize/>
-                </j2seproject3:testng>
+                </j2seproject3:testing>
             </sequential>
         </macrodef>
     </target>
@@ -592,7 +592,7 @@ is divided into following sections:
             </sequential>
         </macrodef>
     </target>
-    <target if="${testng.available}" name="-init-macrodef-testng-debug">
+    <target if="${testing.available}" name="-init-macrodef-testing-debug">
         <macrodef name="testng-debug" uri="http://www.netbeans.org/ns/j2se-project/3">
             <attribute default="${main.class}" name="testClass"/>
             <attribute default="" name="testMethod"/>
@@ -601,25 +601,25 @@ is divided into following sections:
                 <condition else="-testclass @{testClass}" property="test.class.or.method" value="-methods @{testClass}.@{testMethod}">
                     <isset property="test.method"/>
                 </condition>
-                <condition else="-suitename Round_Robin_1 -testname @{testClass} ${test.class.or.method}" property="testng.cmd.args" value="@{testClass}">
+                <condition else="-suitename Round_Robin_1 -testname @{testClass} ${test.class.or.method}" property="testing.cmd.args" value="@{testClass}">
                     <matches pattern=".*\.xml" string="@{testClass}"/>
                 </condition>
                 <delete dir="${build.test.results.dir}" quiet="true"/>
                 <mkdir dir="${build.test.results.dir}"/>
-                <j2seproject3:debug classname="org.testng.TestNG" classpath="${debug.test.classpath}">
+                <j2seproject3:debug classname="org.testing.testing" classpath="${debug.test.classpath}">
                     <customize>
                         <customize2/>
                         <jvmarg value="-ea"/>
-                        <arg line="${testng.debug.mode}"/>
+                        <arg line="${testing.debug.mode}"/>
                         <arg line="-d ${build.test.results.dir}"/>
-                        <arg line="-listener org.testng.reporters.VerboseReporter"/>
-                        <arg line="${testng.cmd.args}"/>
+                        <arg line="-listener org.testing.reporters.VerboseReporter"/>
+                        <arg line="${testing.cmd.args}"/>
                     </customize>
                 </j2seproject3:debug>
             </sequential>
         </macrodef>
     </target>
-    <target depends="-init-macrodef-testng-debug" if="${testng.available}" name="-init-macrodef-testng-debug-impl">
+    <target depends="-init-macrodef-testing-debug" if="${testing.available}" name="-init-macrodef-testing-debug-impl">
         <macrodef name="testng-debug-impl" uri="http://www.netbeans.org/ns/j2se-project/3">
             <attribute default="${main.class}" name="testClass"/>
             <attribute default="" name="testMethod"/>
@@ -653,7 +653,7 @@ is divided into following sections:
             </sequential>
         </macrodef>
     </target>
-    <target depends="-init-macrodef-testng-debug-impl" if="${testng.available}" name="-init-macrodef-test-debug-testng">
+    <target depends="-init-macrodef-testing-debug-impl" if="${testing.available}" name="-init-macrodef-test-debug-testing">
         <macrodef name="test-debug" uri="http://www.netbeans.org/ns/j2se-project/3">
             <attribute default="${includes}" name="includes"/>
             <attribute default="${excludes}" name="excludes"/>

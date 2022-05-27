@@ -6,7 +6,7 @@ the last 2 chars from a given string. if the string length is less than 2
 return instead an empty string.
 
 PS:
-String Slicing[start:end:<Steps>]: Start backwords if the number is negative.
+String Slicing[start:end:<Steps>]: Start backwards if the number is negative.
  Y  u  s  u  f
  1  2  3  4  5
 -5 -4 -3 -2 -1
@@ -18,7 +18,7 @@ string.
 
 """
 
-# Structre Programming Style...
+# Structure Programming Style...
 
 sample = str(input("Enter a String: "))
 

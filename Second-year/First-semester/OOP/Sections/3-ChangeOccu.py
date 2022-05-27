@@ -2,7 +2,7 @@
 Object Oriented Programming (OOP) >> (CS213).
 
 Description: Write a Python program to get a string from a given string where
-all occurences of its char have been changed to "$", except the first char
+all occurrences of its char have been changed to "$", except the first char
 itself.
 
 Using slicing + replace()

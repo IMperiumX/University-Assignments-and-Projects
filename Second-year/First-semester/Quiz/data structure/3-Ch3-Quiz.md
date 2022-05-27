@@ -28,7 +28,7 @@ bubbleSort2, the smallest element is guaranteed to be at
 index 0, after t he second pass, the second smallest is at
 index 1, and so on.
 
-- **bubbleSort1** >> assending order sorting.....
+- **bubbleSort1** >> ascending order sorting.....
 - **bubbleSort2** >> descending order sorting.....
 
 ##
@@ -44,7 +44,7 @@ on a certain computer. About how long will it take on
 |(10 ^ 3) ^ 2     |1 sec|
 |(50 * 10 ^ 3) ^ 2|x sec|
 
-Ans: ((((50 *10 ** 3)) ** 2* 1) / (10 **3)** 2) --> 50 **2 =**2500.0 sec**.
+And: ((((50 *10 ** 3)) ** 2* 1) / (10 **3)** 2) --> 50 **2 =**2500.0 sec**.
 
 ##
 

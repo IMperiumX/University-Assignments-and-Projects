@@ -8,7 +8,7 @@ round robin scheduling algorithm and its implementation in a Java program.
 public class RoundRobin {
     public static void main(String[] args) {
         try (Scanner user_input = new Scanner(System.in)) {
-            System.out.println("Welcome to Our RR CPU Schedual Programming");
+            System.out.println("Welcome to Our RR CPU Schedule Programming");
             System.out.println("------------------------------------------");
             System.out.print("Please, Enter number of process :  ");
 

@@ -1,4 +1,4 @@
-words = input("Enter list of words seperated with spaces: ").split(" ")
+words = input("Enter list of words separated with spaces: ").split(" ")
 
 def longest_word(words: str) -> str:
     """longest_word takes a list of words and return
@@ -6,7 +6,7 @@ def longest_word(words: str) -> str:
 
         :param words: list of words
         :type word: str
-        :return: str and integer -> (word lenght)
+        :return: str and integer -> (word length)
         :rtype: str
     """
     lw = max(words, key=len)

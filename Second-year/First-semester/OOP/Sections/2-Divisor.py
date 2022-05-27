@@ -2,7 +2,7 @@
 Object Oriented Programming (OOP) >> (CS213).
 
 Description: Create a program that asks the user fir a number and then prints
-out a list of all the divisors ofthe number.
+out a list of all the divisors of the number.
 
 Divisor is a number that divides evenly into another number. 
 for example, 13 is a divisor of 26 because 26/13 have no remonder.
@@ -17,12 +17,12 @@ import math
 
 userinput = int(input("Enter an integer to get all it's divisors: "))
 
-ans = []
+and = []
 for i in range(1, int(math.sqrt(userinput)) + 1):
     if userinput % i == 0:
-        ans.append(i)
+        and.append(i)
 
-print(f"Divisors of {userinput} are {ans}")
+print(f"Divisors of {userinput} are {and}")
 
 
 # def divisorGenerator(n):
