@@ -4,7 +4,7 @@ Data Structures >> (CS214).
 Description: Write java programm to accept the width & height of rectangle from
 the user and calculate the area.
 
-Author: yusufadell
+
 */
 
 import java.util.Scanner;

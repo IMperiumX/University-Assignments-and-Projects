@@ -6,7 +6,7 @@ is greater than num2 diplay the appropriate message other wise display another
 one
 
 
-Author: yusufadell
+
 
 
 """

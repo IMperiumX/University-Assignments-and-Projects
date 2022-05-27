@@ -3,7 +3,7 @@ Operating System(OS) >> (CS341).
 
 Description: Program that converts a human height given in feet and inches to centimeters
 
-Author: yusufadell
+
 */
 
 import java.util.Scanner;

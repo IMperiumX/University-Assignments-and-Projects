@@ -8,7 +8,7 @@ itself.
 Using slicing + replace()
 
 
-Author: yusufadell
+
 
 """
 

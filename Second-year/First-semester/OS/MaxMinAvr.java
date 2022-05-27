@@ -5,7 +5,7 @@ Operating System(OS) >> (CS341).
 Description: Write a program in Java that user submit three numbers and find
 the maximum and minimum and the average of them.
 
-Author: yusufadell
+
 */
 
 import java.util.Scanner;

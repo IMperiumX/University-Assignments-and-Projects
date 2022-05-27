@@ -4,7 +4,7 @@ Object Oriented Programming (OOP) >> (CS213).
 Description: Python Program to show shift operator
 
 
-Author: yusufadell
+
 
 
 """

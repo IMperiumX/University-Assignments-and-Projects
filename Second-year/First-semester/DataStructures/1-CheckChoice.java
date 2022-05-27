@@ -9,7 +9,7 @@ chice:
 --Choice= 3 >> num1 % num2
 
 
-Author: yusufadell
+
 */
 
 import java.util.Scanner;

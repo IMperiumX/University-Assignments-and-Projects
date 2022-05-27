@@ -6,7 +6,7 @@ nonempty string.
 
 
 Using Slicing
-Author: yusufadell
+
 
 """
 

@@ -4,7 +4,7 @@ Data Structures >> (CS214).
 Description: Write a program that accept an integer number from user in case
 these number is positive check and print number is even or odd.
 
-Author: yusufadell
+
 
 */
 

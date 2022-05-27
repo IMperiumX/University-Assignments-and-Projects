@@ -11,7 +11,7 @@ no, print different appropriate message.
 
 Hint: how does an even / odd number read differently when divide by 2?
 
-Author: yusufadell
+
 
 """
 

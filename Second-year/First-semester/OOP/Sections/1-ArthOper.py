@@ -5,7 +5,7 @@ Description: Program asks the user for 2 numbers and do four different
 Arithmetic operations, and display the result/
 
 
-Author: yusufadell
+
 
 
 """

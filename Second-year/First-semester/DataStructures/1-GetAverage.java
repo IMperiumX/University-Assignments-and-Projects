@@ -22,7 +22,7 @@ Code Overview:
 ##format string is like a template for hard coded string with a variables inside
 
 
-Author: yusufadell
+
 */
 
 import java.util.Scanner;

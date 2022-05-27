@@ -11,7 +11,7 @@ String Slicing[start:end:<Steps>]: Start backwords if the number is negative.
  1  2  3  4  5
 -5 -4 -3 -2 -1
 
-Author: yusufadell
+
 
 functions: len() get the number of char in a string, start from 1 if not empty
 string.

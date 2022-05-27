@@ -3,7 +3,7 @@ Data Structures >> (CS214).
 
 Description: Java Programm that Takes Two parameter and return the smalles number.
 
-Author: yusufadell
+
 */
 
 import java.util.Scanner;

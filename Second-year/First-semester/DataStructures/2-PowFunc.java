@@ -4,7 +4,7 @@ Data Structures >> (CS214).
 Description: Java Programm that calculate a numer $num to the power $pow 
 pow(num, pow).
 
-Author: yusufadell
+
 */
 
 import java.util.Scanner;

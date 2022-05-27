@@ -3,7 +3,7 @@ Operating System(OS) >> (CS341).
 
 Description: Program that Check if the number is even or odd.
 
-Author: yusufadell
+
 */
 
 import java.util.Scanner;

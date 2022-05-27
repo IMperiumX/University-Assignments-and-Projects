@@ -9,7 +9,7 @@ less than 3, leave it unchged.
 
 str.endwith(): Return True if the string ends with 'ing' that also make sure string's length at least 3.
 
-Author: yusufadell
+
 
 """
 

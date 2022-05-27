@@ -4,7 +4,7 @@ Data Structures >> (CS214).
 Description: Write a program that accept 10numbers from the user and print out
 sum of even numbers and sum of odd numbers.
 
-Author: yusufadell
+
 */
 
 import java.util.Scanner;

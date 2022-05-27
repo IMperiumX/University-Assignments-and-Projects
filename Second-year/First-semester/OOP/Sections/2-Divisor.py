@@ -7,7 +7,7 @@ out a list of all the divisors ofthe number.
 Divisor is a number that divides evenly into another number. 
 for example, 13 is a divisor of 26 because 26/13 have no remonder.
 
-Author: yusufadell
+
 
 """
 import math
