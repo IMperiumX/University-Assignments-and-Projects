@@ -1,7 +1,7 @@
 /*
 Data Structures >> (CS214).
 
-Description: Write java programm to accept the width & height of rectangle from
+Description: Write java program to accept the width & height of rectangle from
 the user and calculate the area.
 
 

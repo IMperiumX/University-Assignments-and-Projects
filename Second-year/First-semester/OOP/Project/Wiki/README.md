@@ -57,7 +57,7 @@ Django form classes are used to handle all the forms on the site. The Django mes
 
 ### Usage
 
-Requires Python(3) and the Python Pacakage Installe (pip) to run:
+Requires Python(3) and the Python Pacakage Instale (pip) to run:
 
 * Install requirements (Django): `pip install -r requirements.txt`
 * Run the app locally: `python manage.py runserver`
