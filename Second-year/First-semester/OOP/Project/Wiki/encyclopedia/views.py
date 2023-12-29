@@ -26,32 +26,32 @@ def search(request):
 
 
 def create(request):
-    if request.method == "POST":
-        title = request.POST.get("title").strip()
-        content = request.POST.get("content").strip()
-        if not (title or content):
-            return render(
-                request,
-                "encyclopedia/create.html",
-                {
-                    "message": "Can't be saved with empty fields!.",
-                    "title": title,
-                    "content": content,
-                },
-            )
-        if title in util.list_entries():
-            return render(
-                request,
-                "encyclopedia/create.html",
-                {
-                    "message": "Be Creative! That Entry Exists.",
-                    "title": title,
-                    "content": content,
-                },
-            )
-        util.save_entry(title, content)
-        return redirect(reverse("entry", kwargs={"title": title}))
-    return render(request, "encyclopedia/create.html")
+    if request.method != "POST":
+        return render(request, "encyclopedia/create.html")
+    title = request.POST.get("title").strip()
+    content = request.POST.get("content").strip()
+    if not (title or content):
+        return render(
+            request,
+            "encyclopedia/create.html",
+            {
+                "message": "Can't be saved with empty fields!.",
+                "title": title,
+                "content": content,
+            },
+        )
+    if title in util.list_entries():
+        return render(
+            request,
+            "encyclopedia/create.html",
+            {
+                "message": "Be Creative! That Entry Exists.",
+                "title": title,
+                "content": content,
+            },
+        )
+    util.save_entry(title, content)
+    return redirect(reverse("entry", kwargs={"title": title}))
 
 
 def edit(request, title):

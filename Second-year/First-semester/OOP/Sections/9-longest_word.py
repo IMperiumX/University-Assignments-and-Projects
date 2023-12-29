@@ -10,9 +10,8 @@ def longest_word(words: str) -> str:
         :rtype: str
     """
     lw = max(words, key=len)
-    template = f"""Longest word: {lw}
+    return f"""Longest word: {lw}
 Length of the longest word: {len(lw)}
                 """
-    return template
 
 

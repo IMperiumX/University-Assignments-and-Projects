@@ -21,10 +21,7 @@ def get_prime(num):
                 break
     return flag
 
-flag = get_prime(num)
-
-# check if flag is True
-if flag:
+if flag := get_prime(num):
     print(num, "is not a prime number")
 else:
     print(num, "is a prime number")

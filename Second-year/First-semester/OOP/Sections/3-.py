@@ -13,6 +13,7 @@ str.endwith(): Return True if the string ends with 'ing' that also make sure str
 
 """
 
+
 String = str(input("Enter a String: "))
 
 Condition = String.endswith('ing')
@@ -22,7 +23,7 @@ if len(String) < 3:
     print(String)
 
 elif String.endswith('ing'):
-    print(String + 'ly')
+    print(f'{String}ly')
 
 else:
-    print(String + 'ing')
+    print(f'{String}ing')
