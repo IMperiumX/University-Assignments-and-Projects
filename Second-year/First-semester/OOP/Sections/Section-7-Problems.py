@@ -14,7 +14,7 @@ mytuple[3]
 
 
 # Write a Python program to print a tuple with string formatting.
-tuple([i for i in "Yusuf"])
+tuple(list("Yusuf"))
 
 
 # Write a Python program to replace last value of tuples in a list.

@@ -51,8 +51,7 @@ while 1 < 3:
 
 # ----------------------------------------------------------
 
-List = [1, 2, 3, 4]
-List.append(5)
+List = [1, 2, 3, 4, 5]
 print(List)
 
 # and: [1, 2, 3, 4, 5]
@@ -60,11 +59,7 @@ print(List)
 # ----------------------------------------------------------
 
 list1 = [1, 2, 3, 4]
-list2 = []
-
-for i in list1:
-    list2.append(i)
-
+list2 = list(list1)
 list1.append(5)
 print(list2)
 
